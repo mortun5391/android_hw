@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HW8</string>
+    
+    <!-- Auth Activity -->
+    <string name="login_title">Вход</string>
+    <string name="register_title">Регистрация</string>
+    <string name="username_hint">Имя пользователя</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="toggle_to_register">Нет аккаунта? Зарегистрироваться</string>
+    <string name="toggle_to_login">Уже есть аккаунт? Войти</string>
+    <string name="fill_all_fields">Пожалуйста, заполните все поля</string>
+    <string name="login_success">Успешный вход!</string>
+    <string name="login_failed">Неправильное имя пользователя или пароль</string>
+    <string name="username_exists">Этот пользователь уже существует</string>
+    <string name="email_exists">Этот email уже зарегистрирован</string>
+    <string name="register_success">Успешно зарегистрирован!</string>
+    
+    <!-- Chat Activity -->
+    <string name="send_message">Отправить</string>
+    <string name="logout">Выход</string>
+    <string name="empty_message">Сообщение не может быть пусто</string>
+    <string name="message_hint">Введите сообщение...</string>
+</resources>
