@@ -1,8 +1,20 @@
+import java.util.Properties
+
 plugins { id("com.android.application") }
 
-val openWeatherApiKey = (project.findProperty("OPEN_WEATHER_API_KEY") as String?)
-    ?: System.getenv("OPEN_WEATHER_API_KEY")
-    ?: ""
+val localProps = Properties().apply {
+    val localFile = rootProject.file("local.properties")
+    if (localFile.exists()) {
+        localFile.inputStream().use { load(it) }
+    }
+}
+
+val openWeatherApiKey = (
+    localProps.getProperty("OPEN_WEATHER_API_KEY")
+        ?: project.findProperty("OPEN_WEATHER_API_KEY") as String?
+        ?: System.getenv("OPEN_WEATHER_API_KEY")
+        ?: ""
+).trim()
 
 android {
     namespace = "com.example.extra1"

@@ -2,17 +2,20 @@
 
 ## OpenWeather API key setup
 
-Create or edit `local.properties` in `extra1/` and add:
+1. Open `extra1/local.properties` and add:
 
 ```properties
 OPEN_WEATHER_API_KEY=your_openweather_api_key
 ```
 
-Alternative: export environment variable before Gradle build:
+2. **Sync Gradle** ("Sync Project with Gradle Files").
+3. **Rebuild + reinstall** the app (BuildConfig is generated at build time).
+
+Alternative: set environment variable before build:
 
 ```bash
 export OPEN_WEATHER_API_KEY=your_openweather_api_key
 ```
 
 The app reads this value into `BuildConfig.OPEN_WEATHER_API_KEY`.
-If it is missing or invalid, you will see a clear message in the UI.
+If it is missing or invalid, the main screen shows a clear message.
