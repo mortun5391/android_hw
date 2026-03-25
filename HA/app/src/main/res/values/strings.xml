@@ -4,4 +4,5 @@
     <string name="goal_done">Great job! Daily goal completed ✅</string>
     <string name="keep_going">Nice pace, keep going 💧</string>
     <string name="start_message">Start your first glass of water</string>
+    <string name="image_content_description">Preview image</string>
 </resources>

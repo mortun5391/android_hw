@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">extra_1</string>
+    <string name="error_missing_key">Не удалось загрузить погоду. Укажите OPEN_WEATHER_API_KEY в local.properties.</string>
 </resources>
