@@ -44,16 +44,16 @@ public class MainActivity extends AppCompatActivity {
 
     private List<ImageItem> createImages() {
         List<ImageItem> images = new ArrayList<>();
-        images.add(new ImageItem("Mountain lake", "https://picsum.photos/id/10/800/500"));
-        images.add(new ImageItem("Forest road", "https://picsum.photos/id/20/800/500"));
-        images.add(new ImageItem("Sunny beach", "https://picsum.photos/id/30/800/500"));
-        images.add(new ImageItem("City lights", "https://picsum.photos/id/40/800/500"));
-        images.add(new ImageItem("Desert dunes", "https://picsum.photos/id/50/800/500"));
-        images.add(new ImageItem("River valley", "https://picsum.photos/id/60/800/500"));
-        images.add(new ImageItem("Snowy peaks", "https://picsum.photos/id/70/800/500"));
-        images.add(new ImageItem("Countryside", "https://picsum.photos/id/80/800/500"));
-        images.add(new ImageItem("Morning fog", "https://picsum.photos/id/90/800/500"));
-        images.add(new ImageItem("Autumn trail", "https://picsum.photos/id/100/800/500"));
+        images.add(new ImageItem("Mountains", "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg"));
+        images.add(new ImageItem("Forest", "https://upload.wikimedia.org/wikipedia/commons/a/a5/Redwood_forest.jpg"));
+        images.add(new ImageItem("Beach", "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"));
+        images.add(new ImageItem("River", "https://upload.wikimedia.org/wikipedia/commons/2/24/Wilson_River%2C_Oregon.jpg"));
+        images.add(new ImageItem("Waterfall", "https://upload.wikimedia.org/wikipedia/commons/9/9e/Lone_Creek_Falls2.jpg"));
+        images.add(new ImageItem("Lake", "https://upload.wikimedia.org/wikipedia/commons/0/0e/Lake_mapourika_NZ.jpeg"));
+        images.add(new ImageItem("Road", "https://upload.wikimedia.org/wikipedia/commons/8/88/Blue_Ridge_Parkway_in_Fall.jpg"));
+        images.add(new ImageItem("Desert", "https://upload.wikimedia.org/wikipedia/commons/8/87/Sossusvlei_Dune.jpg"));
+        images.add(new ImageItem("Snow", "https://upload.wikimedia.org/wikipedia/commons/1/12/Matterhorn_from_Domh%C3%BCtte_-_2.jpg"));
+        images.add(new ImageItem("City", "https://upload.wikimedia.org/wikipedia/commons/e/e6/New_York_City_at_night_HDR.jpg"));
         return images;
     }
 }
