@@ -1,4 +1,4 @@
-package com.example.extra1;
+package com.example.extra_1;
 
 import android.os.Bundle;
 import android.widget.TextView;
@@ -9,8 +9,8 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.extra1.ui.ForecastAdapter;
-import com.example.extra1.ui.WeatherViewModel;
+import com.example.extra_1.ui.ForecastAdapter;
+import com.example.extra_1.ui.WeatherViewModel;
 
 public class MainActivity extends AppCompatActivity {
     @Override

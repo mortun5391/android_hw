@@ -1,11 +1,11 @@
-package com.example.extra1.ui;
+package com.example.extra_1.ui;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.extra1.api.NetworkSingleton;
-import com.example.extra1.model.WeatherModels;
+import com.example.extra_1.api.NetworkSingleton;
+import com.example.extra_1.model.WeatherModels;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
