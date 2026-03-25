@@ -28,8 +28,22 @@ public class WeatherViewModel extends ViewModel {
                 .enqueue(new Callback<>() {
                     @Override
                     public void onResponse(Call<WeatherModels.ForecastResponse> call, Response<WeatherModels.ForecastResponse> response) {
+                        if (!response.isSuccessful()) {
+                            if (response.code() == 401) {
+                                today.setValue("Не удалось загрузить погоду. Проверьте API-ключ.");
+                            } else {
+                                today.setValue("Ошибка сервера: " + response.code());
+                            }
+                            week.setValue(new ArrayList<>());
+                            return;
+                        }
+
                         List<WeatherModels.ForecastItem> data = response.body() != null ? response.body().list : new ArrayList<>();
-                        if (data == null || data.isEmpty()) return;
+                        if (data == null || data.isEmpty()) {
+                            today.setValue("Нет данных о погоде.");
+                            week.setValue(new ArrayList<>());
+                            return;
+                        }
 
                         WeatherModels.ForecastItem first = data.get(0);
                         String desc = (first.weather != null && !first.weather.isEmpty()) ? first.weather.get(0).description : "";
@@ -40,6 +54,7 @@ public class WeatherViewModel extends ViewModel {
                             String day = item.dt_txt.split(" ")[0];
                             byDay.computeIfAbsent(day, k -> new ArrayList<>()).add(item.main.temp);
                         }
+
                         List<WeatherModels.DayForecast> out = new ArrayList<>();
                         int i = 0;
                         for (Map.Entry<String, List<Double>> e : byDay.entrySet()) {
@@ -53,7 +68,7 @@ public class WeatherViewModel extends ViewModel {
 
                     @Override
                     public void onFailure(Call<WeatherModels.ForecastResponse> call, Throwable t) {
-                        today.setValue("Ошибка: " + t.getMessage());
+                        today.setValue("Ошибка сети: " + t.getMessage());
                         week.setValue(new ArrayList<>());
                     }
                 });
