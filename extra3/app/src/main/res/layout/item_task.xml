@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="8dp" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/taskTitle" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+    <ImageButton android:id="@+id/editBtn" android:src="@android:drawable/ic_menu_edit" android:layout_width="40dp" android:layout_height="40dp"/>
+    <ImageButton android:id="@+id/deleteBtn" android:src="@android:drawable/ic_menu_delete" android:layout_width="40dp" android:layout_height="40dp"/>
+</LinearLayout>
