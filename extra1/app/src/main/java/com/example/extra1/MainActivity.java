@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
         WeatherViewModel vm = new ViewModelProvider(this).get(WeatherViewModel.class);
         vm.getToday().observe(this, today::setText);
         vm.getWeek().observe(this, adapter::submit);
-        vm.load("Almaty", "PUT_OPEN_WEATHER_MAP_KEY_HERE");
+
+        String apiKey = BuildConfig.OPEN_WEATHER_API_KEY;
+        if (apiKey == null || apiKey.isBlank()) {
+            today.setText(getString(R.string.error_missing_key));
+            return;
+        }
+
+        vm.load("Almaty", apiKey);
     }
 }
