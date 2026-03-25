@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">WaterTracker</string>
-    <string name="progress_format">%1$d / %2$d glasses</string>
-    <string name="goal_done">Great job! Daily goal completed ✅</string>
-    <string name="keep_going">Nice pace, keep going 💧</string>
-    <string name="start_message">Start your first glass of water</string>
-    <string name="image_content_description">Preview image</string>
+    <string name="progress_ml_format">%1$d / %2$d ml</string>
+    <string name="progress_percent_format">Progress: %1$d%%</string>
+    <string name="goal_done">Goal reached! Great hydration today 🏆</string>
+    <string name="keep_going">More than halfway — keep going 💪</string>
+    <string name="start_message">Start with your first glass 💧</string>
+    <string name="goal_input_error">Введите корректную цель в мл.</string>
+    <string name="goal_range_error">Норма должна быть от 500 до 6000 мл.</string>
+    <string name="goal_saved">Новая цель сохранена.</string>
+    <string name="tip_default">Tip: %1$s</string>
+    <string name="image_content_description">Hydration status image</string>
 </resources>
