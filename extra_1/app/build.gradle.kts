@@ -17,11 +17,11 @@ val openWeatherApiKey = (
 ).trim()
 
 android {
-    namespace = "com.example.extra1"
+    namespace = "com.example.extra_1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.extra1"
+        applicationId = "com.example.extra_1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
